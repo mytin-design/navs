@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Navigation bar styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    height: 2.5pc;
+}
+
+/* Remove text-decoration from anchor elements */
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: border-bottom .5s;
+
+}
+
+/* Create space between items in each container */
+.nav-links, .acc-func {
+    text-align: center;
+word-spacing: .15pc;
+
+    /* Before declaring the command below, when child elements are hovered,
+    and a border-bottom added, an addiditional margin/padding of 1 is added.
+    I noticed this behavior occurs because the child elements are in display: block status;
+    //Thus, changing the mode to display: inline, removes this error*/
+
+
+}
+
+.nav-links {
+    width: 53%;
+}
+
+.acc-func {
+    width: 20%;
+}
+
+
+
+/* Create a hover effect for each link: hover states */
+
+a:hover {
+    border-bottom: .1pc groove #5f3;
+}
+
+
